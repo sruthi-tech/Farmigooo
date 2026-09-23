@@ -6,7 +6,8 @@ import '../../features/machinery/presentation/screens/machinery_placeholder_scre
 import '../../features/workers/presentation/screens/workers_placeholder_screen.dart';
 import '../../features/marketplace/presentation/screens/marketplace_screen.dart';
 import '../../features/marketplace/presentation/screens/add_product_screen.dart';
-import '../../features/consultants/presentation/screens/consultants_placeholder_screen.dart';
+import '../../features/consultants/presentation/screens/consultants_screen.dart';
+import '../../features/consultants/presentation/screens/register_consultant_screen.dart';
 import '../../features/agriculture/presentation/screens/agriculture_placeholder_screen.dart';
 import '../../features/notifications/presentation/screens/notifications_placeholder_screen.dart';
 
@@ -22,6 +23,7 @@ abstract class AppRoutes {
   static const String marketplace = '/marketplace';
   static const String addProduct = '/marketplace/add-product';
   static const String consultants = '/consultants';
+  static const String registerConsultant = '/consultants/register';
   static const String agriculture = '/agriculture';
   static const String notifications = '/notifications';
 
@@ -33,7 +35,8 @@ abstract class AppRoutes {
         workers: (context) => const WorkersPlaceholderScreen(),
         marketplace: (context) => const MarketplaceScreen(),
         addProduct: (context) => const AddProductScreen(),
-        consultants: (context) => const ConsultantsPlaceholderScreen(),
+        consultants: (context) => const ConsultantsScreen(),
+        registerConsultant: (context) => const RegisterConsultantScreen(),
         agriculture: (context) => const AgriculturePlaceholderScreen(),
         notifications: (context) => const NotificationsPlaceholderScreen(),
       };
