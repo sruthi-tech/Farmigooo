@@ -8,7 +8,8 @@ import '../../features/marketplace/presentation/screens/marketplace_screen.dart'
 import '../../features/marketplace/presentation/screens/add_product_screen.dart';
 import '../../features/consultants/presentation/screens/consultants_screen.dart';
 import '../../features/consultants/presentation/screens/register_consultant_screen.dart';
-import '../../features/agriculture/presentation/screens/agriculture_placeholder_screen.dart';
+import '../../features/agriculture/presentation/screens/agriculture_updates_screen.dart';
+import '../../features/agriculture/presentation/screens/post_update_screen.dart';
 import '../../features/notifications/presentation/screens/notifications_placeholder_screen.dart';
 
 /// Central Routing configuration for FARMIGO.
@@ -25,6 +26,7 @@ abstract class AppRoutes {
   static const String consultants = '/consultants';
   static const String registerConsultant = '/consultants/register';
   static const String agriculture = '/agriculture';
+  static const String postAgricultureUpdate = '/agriculture/post-update';
   static const String notifications = '/notifications';
 
   static Map<String, WidgetBuilder> get routes => {
@@ -37,7 +39,8 @@ abstract class AppRoutes {
         addProduct: (context) => const AddProductScreen(),
         consultants: (context) => const ConsultantsScreen(),
         registerConsultant: (context) => const RegisterConsultantScreen(),
-        agriculture: (context) => const AgriculturePlaceholderScreen(),
+        agriculture: (context) => const AgricultureUpdatesScreen(),
+        postAgricultureUpdate: (context) => const PostUpdateScreen(),
         notifications: (context) => const NotificationsPlaceholderScreen(),
       };
 
